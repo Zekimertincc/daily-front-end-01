@@ -1,0 +1,103 @@
+:root{
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+html{
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background: url(images/pattern-background-desktop.svg) no-repeat   ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: var(--Paleblue);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.container{
+    width: 450px;
+    height: 650px;
+    position: relative;
+    top: 80px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 15px;
+
+}
+.img img{
+   
+    border-bottom: none ;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card h2{
+    text-align: center;
+    margin-top: 50px;
+    color: var(--Darkblue);
+    font-weight: 800;
+}
+.card p{
+    text-align: center;
+    color:var(--Desaturatedblue);
+    border:1px;
+    position: relative;
+    left: 70px;
+    width:300px;
+    word-wrap: break-word;
+}
+
+.pricing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:400px;
+    height: 90px;
+    margin:0 auto ;
+    gap: 1rem;
+    background-color: var(--Verypaleblue);
+    border-radius: 15px;
+}
+.pricing #year{
+    position: relative;
+    top:13px;
+    right:108px;
+    color: var(--Desaturatedblue);
+}
+.pricing b{
+    position: relative;
+    bottom: 15px;
+}
+.final{
+    margin: 0 auto;
+}
+.final .checkout{
+    margin:0 auto ;
+    width:300px ;
+    height: 15px;
+    padding: 1em 2em 1em;
+    position: relative;
+    top: 25px;
+    background-color: var(--Brightblue);
+    border-radius:15px;
+    box-shadow: 0 0.5em 0.5em -0.4em var(--Brightblue);
+    
+}
+.checkout a{
+    color: #fff;
+    text-decoration: none;
+}
+.cancel a{
+    position: relative;
+    top: 25px;
+    text-decoration: none;
+    color: var(--Desaturatedblue);
+    font-weight: 900;
+}
